@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- Wk2 lessons. Note this complicated comment start/end Tag -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="Fun stuff with Baby Yoda." />
+    <title>GroguFunFacts</title>
+    <style>
+      em {
+        color: blue;
+        font-style: oblique;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Nav Tag indicates to Browser & assistive tech that this section contains imp navigation links-->
+    <nav>
+      Best practices ... this bulleted Nav Tag section should:
+      <ul>
+        <li>Only contain Major Navigation areas.</li>
+        <li>Organize links clearly.</li>
+        <li>
+          Accessible links such as aria-label ARIA attributes. Also used by SEO
+          screen readers for assistive tech to quickly navigate to imp sections.
+        </li>
+      </ul>
+      <ul>
+        <p>Bulleted list of fun links:</p>
+        <li>
+          <a href="#section1" aria-label="Ordered list of Grogu history"
+            >Section1</a
+          >
+          <!--ARIA attributes provide audio instruction for accessibility Users-->
+        </li>
+        <li><a href="#section2">Section2</a></li>
+        <li><a href="company/about.html" target="_blank">About Grogu</a></li>
+        <li><a href="https://google.com" target="_blank">Google</a></li>
+        <li><a href="mailto:cspskk@gmail.com">EmailMe</a></li>
+      </ul>
+    </nav>
+
+    <p>&nbsp;</p>
+    <img src="images/grogu.jpg" alt="Grogu Eggs Image" />
+    <h1>Building a Linktree With Din Grogu&copy;</h1>
+    <p>Linktree = SOMETHING</p>
+    <p>Note this is Heading1</p>
+    <h2>HTML Fun Facts</h2>
+    <p>
+      It begins with an index.html file that you can start with "!" + TAB to
+      generate a basic file template. ie. !DOCTYPE Tag.
+    </p>
+    <p>HTML is case-insensitive!</p>
+    <p>Note this is subsection Heading2</p>
+    <h3>HTML Starts With Tag &lt;Head&gt;</h3>
+    <p>
+      All index.html files should have <em>meta charset</em> and
+      <em>name="viewport"</em> for <strong>best practices</strong>.
+    </p>
+    <p>Note this is subsection Heading3</p>
+    <h4>Title Tag</h4>
+    <p>
+      Title defines the text you see at the top of the Browser Tab for this
+      website.
+    </p>
+    <p>Note this is subsection Heading4</p>
+    <h4>Style Tag</h4>
+    <p>Style groups cosmetic customizations.</p>
+    <p>Note this is subsection Heading4.</p>
+    <h5>Emphasis</h5>
+    <p>Emphasis customizes the text it wraps.</p>
+    <p>Note this is subsection Heading5.</p>
+    <h6>Color</h6>
+    <p>Used to assign a color to the &lt;em&gt; Tag.</p>
+    <p>Note this is subsection Heading6.</p>
+    <h6>Font-Style</h6>
+    <p>Used to assign a font style to the &lt;em&gt; Tag.</p>
+    <p>Note this is subsection Heading6.</p>
+    <h3>HTML File Ends With Tag &lt;Body&gt;</h3>
+    <h4>Tag &lt;p&gt; (Paragraph)</h4>
+    <h5>Tag <em>Lorem#</em> Dummy Text</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illum soluta
+      ducimus? Alias ad eligendi laudantium porro iste aliquam voluptas beatae
+      itaque, odit impedit obcaecati in laborum eveniet dolores minima?
+    </p>
+
+    <h4>Tag Img</h4>
+    <p>Use to insert an image.</p>
+    <img src="images/groguSoup.jpg" alt="Grogu Soup Image" />
+    <h4>Character Entity</h4>
+    <p>https://tools.w3cub.com/html-entities</p>
+    <p>REM: Suffix each character entity with semi-colon. ie. &amp;lt&semi;</p>
+    <h5>&amp;lt and &amp;gt</h5>
+    <p>Use to generate greater-than and less-than symbols.</p>
+    <h5>&amp;nbsp</h5>
+    <p>Non-breaking space. Use this to keep 2 words on the same line.</p>
+    <h5>&amp;copy</h5>
+    <p>Use this to generate copyright symbol.</p>
+    <h6></h6>
+    <h4>Hyperlinks Tag URL</h4>
+    <p>Absolute HTML link starts with a fwd-slash ie. /index.html</p>
+    <p>
+      Relative links may be preceding parent dir names ie. company/index.html
+      ... or ../../index.html
+    </p>
+    <p>Link to image & download ...</p>
+    <a href="images/grogu.jpg" download>GroguImageDownload</a>
+    <section>
+      <h2 id="section1">Section1 Using &lt;section&gt;</h2>
+
+      <p>This uses the &lt;section&gt; Tag useful for:</p>
+      <ul>
+        <li>
+          Grouping together different sections of a webpage (e.g., "About Me,"
+          "Contact Information," "Featured Projects")
+        </li>
+        <li>Breaking up long articles or blog posts into thematic sections.</li>
+        <li>
+          Creating multiple content areas on a single-page website, like
+          portfolio items, service descriptions, etc.
+        </li>
+        <li>
+          SEO & Accessibility: helps search engines and assistive technologies
+          understand the structure of a webpage. Screen readers can easily
+          navigate between sections, and search engines recognize the thematic
+          blocks, which could improve SEO.
+        </li>
+      </ul>
+      <ul>
+        Section Tag Best Practices:
+        <li>
+          Thematic Content: Use the Section tag to wrap content that is
+          thematically related. For example, if you have multiple types of
+          content like "Contact Info," "Portfolio," and "Skills," each would go
+          in its own Section Tag.
+        </li>
+        <li>
+          Use Headings: Every Section should typically start with a Heading
+          element to give it a title. This helps with accessibility and provides
+          structure to your content.
+        </li>
+        <li>
+          Avoid Overuse: While the Section tag is useful, don&apos;t overuse it.
+          Not every part of the page needs to be in a Section Tag. Use it only
+          when there is a clear thematic grouping of content.
+        </li>
+      </ul>
+      <!--Lorem20 generated the following paragraph-->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+        voluptatem iure in, ab molestias quisquam, inventore placeat sed ipsum
+        vitae ducimus, alias id unde velit.
+      </p>
+      <ol>
+        Ordered list of Grogu's history:
+        <li>1st Grogu was with the Young Jedi school.</li>
+        <li>
+          2nd Grogu was kidnapped by the Imperial Empire and subject to
+          scientific tests on his powers.
+        </li>
+        <li>3rd Grogu saved by the Rebels then lost in transport.</li>
+        <li>
+          4th Mandoloria, as a hired bounty hunter, found Grogu ... and so
+          begins the adventures of The Mandalorian.
+        </li>
+      </ol>
+      <p></p>
+      <p>A list without using order or unorder:</p>
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+    </section>
+
+    <h2 id="section2">Section2</h2>
+    <!--Lorem5 generated the following sentence-->
+    <p>This does NOT use the &lt;section&gt; Tag.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#">Jump to Top</a>
+
+    <p></p>
+    <p></p>
+    <footer>FooterTag: This beginner Wk2 website is KK&copy;</footer>
+  </body>
+</html>
