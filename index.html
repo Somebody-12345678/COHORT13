@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Wk2 lessons. Note this complicated comment start/end Tag -->
+<!-- Wk2 lessons. Combination of everything learnt this wk. Boiler Plate.-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,10 @@
     <meta name="keywords" content="HTML, CSS" />
     <meta name="description" content="Fun stuff with Baby Yoda." />
     <title>GroguFunFacts</title>
+    <link rel="stylesheet" href="styles.css" />
+
     <style>
+      /* <!--CSS  Internal  Stylesheet  definitions that  apply  to  all  applicable  Tags-->  */
       em {
         color: blue;
         font-style: oblique;
@@ -16,13 +19,18 @@
         width: 200px;
         height: 200px;
         object-fit: contain;
+        border-radius: 10px;
+      }
+      h2 {
+        color: aqua;
       }
     </style>
   </head>
   <body>
     <!--Nav Tag indicates to Browser & assistive tech that this section contains imp navigation links-->
     <nav>
-      Best practices ... this bulleted Nav Tag section should:
+      Best practices ... this bulleted Nav Tag section should (note bullet
+      symbol for U1 Tag changed from default solid dot to circle):
       <ul>
         <li>Only contain Major Navigation areas.</li>
         <li>Organize links clearly.</li>
@@ -31,39 +39,106 @@
           screen readers for assistive tech to quickly navigate to imp sections.
         </li>
       </ul>
-      <ul>
-        <p>Bulleted list of fun links:</p>
-        <li>
-          <a href="#section1" aria-label="Ordered list of Grogu history"
-            >Section1</a
-          >
-          <!--ARIA attributes provide audio instruction for accessibility Users-->
-        </li>
-        <li><a href="#section2">Section2</a></li>
-        <li><a href="company/about.html" target="_blank">About Grogu</a></li>
-        <li><a href="https://google.com" target="_blank">Google</a></li>
-        <li><a href="mailto:cspskk@gmail.com">EmailMe</a></li>
-      </ul>
+      <div class="funlinks">
+        <ul>
+          <p>Bulleted list of fun links:</p>
+          <li>
+            <a href="#section1" aria-label="Ordered list of Grogu history"
+              >Section1</a
+            >
+            <!--ARIA attributes provide audio instruction for accessibility Users-->
+          </li>
+          <li><a href="wk2ass.html" target="_blank">Wk2 Assignment</a></li>
+          <li><a href="#sectioncss">CSS</a></li>
+          <li><a href="company/about.html" target="_blank">About Grogu</a></li>
+          <li><a href="https://google.com" target="_blank">Google</a></li>
+          <li><a href="mailto:cspskk@gmail.com">EmailMe</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>
+          Objective: This is a boiler plate of everything learned to date -
+          implemented. Wk2 assignment integrated.
+        </p>
+      </div>
+      <div>
+        <p>
+          1. Add a div and add a class to that div with some styling points for
+          creativity! 2. Merge a column or a row in your table 3. Give your
+          table a caption 4. Make a form field required and set a maximum
+          character length
+        </p>
+        <p>First Table</p>
+        <table>
+          <caption>
+            CaptionTag For Table
+          </caption>
+          <thead>
+            <tr>
+              <th>1st Col</th>
+              <th>2nd Col</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>a1</td>
+              <td>b1</td>
+            </tr>
+            <tr>
+              <td>a2</td>
+              <td>b2</td>
+            </tr>
+            <tr>
+              <!--  Attempt to merge cells in table -->
+              <td colspan="2">a3</td>
+              <td>b3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p></p>
+      <div class="box-model">CSS Box Model</div>
+
+      <!-- ERROR: Inline img size attributes do not work for this CSS Box Model. -->
+      <img
+        src="images/CSSboxModel.png"
+        alt="CSS Box Model"
+        width="100%"
+        sizes="(max-width: 600px) 500px, 50vw"
+      />
     </nav>
 
+    <p></p>
+    <p></p>
     <p>&nbsp;</p>
     <img src="images/grogu.jpg" alt="Grogu Eggs Image" />
-    <h1>Building a Linktree With Din Grogu&copy;</h1>
+    <h1 style="color: blue">
+      UNDER-CONSTRUCTION: Samples of everything learned in COHORT13
+    </h1>
     <p>Linktree = SOMETHING</p>
-    <p>Note this is Heading1</p>
+    <p>
+      Note this is Heading1 with Inline style=color:blue for this Header1 only.
+    </p>
     <h2>HTML Fun Facts</h2>
     <p>
       It begins with an index.html file that you can start with "!" + TAB to
       generate a basic file template. ie. !DOCTYPE Tag.
     </p>
-    <p>HTML is case-insensitive!</p>
-    <p>Note this is subsection Heading2</p>
+    <p>HTML is case-INSENSITIVE!</p>
+    <p>
+      Note this is subsection Heading2 with Internal style=color:aqua for all
+      Heading2
+    </p>
+    <p class="error">Test style.css Class ERROR red text</p>
+    <p class="success">Test Style.css Class SUCCESS green text</p>
+    <p id="purpleid">Test style.css ID Selector purple font.</p>
+
     <h3>HTML Starts With Tag &lt;Head&gt;</h3>
     <p>
       All index.html files should have <em>meta charset</em> and
       <em>name="viewport"</em> for <strong>best practices</strong>.
     </p>
-    <p>Note this is subsection Heading3</p>
+    <p>Note this is subsection Heading3. In style.css h3 color:crimson</p>
     <h4>Title Tag</h4>
     <p>
       Title defines the text you see at the top of the Browser Tab for this
@@ -97,25 +172,31 @@
     <h4>Character Entity</h4>
     <p>https://tools.w3cub.com/html-entities</p>
     <p>REM: Suffix each character entity with semi-colon. ie. &amp;lt&semi;</p>
-    <h5>&amp;lt and &amp;gt</h5>
+    <h5>&amp;lt and &amp;gt Heading5</h5>
     <p>Use to generate greater-than and less-than symbols.</p>
-    <h5>&amp;nbsp</h5>
+    <h5>&amp;nbsp Heading5</h5>
     <p>Non-breaking space. Use this to keep 2 words on the same line.</p>
-    <h5>&amp;copy</h5>
+    <h5>&amp;copy Heading5</h5>
     <p>Use this to generate copyright symbol.</p>
     <h6></h6>
-    <h4>Hyperlinks Tag URL</h4>
+    <h4>Hyperlinks Tag URL Heading4</h4>
     <p>Absolute HTML link starts with a fwd-slash ie. /index.html</p>
     <p>
       Relative links may be preceding parent dir names ie. company/index.html
       ... or ../../index.html
     </p>
-    <p>Link to image & download ...</p>
+    <p>Link to Grogu drinking broth image & download ...</p>
     <a href="images/grogu.jpg" download>GroguImageDownload</a>
     <section>
-      <h2 id="section1">Section1 Using &lt;section&gt;</h2>
+      <h2 id="section1" class="font-styles">Section1 Using &lt;section&gt;</h2>
 
-      <p>This uses the &lt;section&gt; Tag useful for:</p>
+      <p>
+        This Heading2 Tag uses CSS declared font-family:cursive,
+        font-weight:bold, font-style:italic, text-decoration:underline,
+        font-size:50px ... to override the Body Tag font-family:Helvetica for
+        the rest of the pg
+      </p>
+      <p>This Section1 uses the &lt;section&gt; Tag useful for:</p>
       <ul>
         <li>
           Grouping together different sections of a webpage (e.g., "About Me,"
@@ -178,14 +259,56 @@
       <li>Item3</li>
     </section>
 
-    <h2 id="section2">Section2</h2>
-    <!--Lorem5 generated the following sentence-->
-    <p>This does NOT use the &lt;section&gt; Tag.</p>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <a href="#">Jump to Top</a>
+    <div>
+      <h2 id="sectioncss">CSS</h2>
+      <!--Lorem5 generated the following sentence-->
+      <p>This does NOT use the &lt;section&gt; Tag.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
 
     <p></p>
+    <div class="orangebg">
+      Orange background using Div Tag & text-align:center & line-height:2 &
+      letter-spacing: 4px & word-spacing:20px.
+    </div>
+    <span class="yellowbg">Yellow background using Span Tag.</span>
+    <br />
+    <br />
+
+    <div class="pos1">Position content1</div>
+    <div class="pos2container">
+      <div class="pos2">Position content2</div>
+    </div>
+
     <p></p>
-    <footer>FooterTag: This beginner Wk2 website is KK&copy;</footer>
+
+    <div>
+      <a href="#">Jump to Top</a>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+    <nav>
+      <div class="emailkk">
+        <p>
+          Implementation of FormTag ... Jump to Top if you want to email me.
+        </p>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="message">Message:</label>
+          <!-- Max char length i/p box -->
+          <textarea id="message" name="message" maxlength="25"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <p></p>
+      <footer>
+        FooterTag: This beginner Wk2 Link Tree website is KK&copy;
+      </footer>
+    </nav>
   </body>
 </html>

@@ -1,0 +1,133 @@
+body {
+  /* background-color: rgb(222, 240, 248); */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flexbox;
+}
+/* .main-content {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    } */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+ th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid grey;
+  border-bottom: 1px solid #ddd;
+    height: 50px;
+    vertical-align: center;
+}
+
+ tr {
+  background-color: aquamarine;
+}
+
+ tr:hover {
+  background-color: #f5f5f5;
+}
+
+ th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Default color */
+* {
+  color: rgba(0, 0, 0, 0.744);
+}
+h3 {
+  color: crimson;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+#purpleid {
+  color: purple;
+}
+.funlinks {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.orangebg{
+    background-color:orange;
+    text-align:center;
+    line-height:2;
+    letter-spacing: 4px;
+    word-spacing:20px;
+    border:5px solid green;
+    /* display: inline; */
+}
+
+.yellowbg{
+    background-color:   yellow;
+    border: 5px solid red;
+    /* display: block; */
+    /* display: none;  kk this is used w JScrpt to show height elements?*/
+}
+
+.pos1{
+    border: 1px solid red;
+    position: relative;
+    /* position: sticky; */
+    /* top:50px;
+    left:50px; */
+}
+
+.pos2{
+    border:1px solid blue;
+    position:relative;
+    /* position:fixed; */
+    /* position: absolute; */
+    /* bottom: 0px;
+    right:0px; */
+}
+
+/* .pos2container {
+    position:relative;
+    width:200px;
+    height:2000px;
+    border:1px solid black;
+} */
+
+.font-styles{
+    font-family:cursive;
+    font-style:italic;
+    font-weight:bold;
+    text-decoration:  underline;
+    font-size:50px;
+}
+
+ul{
+    list-style-type: circle;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.box-model{
+    border: 1px solid red;
+    height: 50px;
+    width: 300px;
+    padding: 20px;
+    /* margin: 20px; */
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+/* important! */
+emailkk{
+    justify-content: end;
+}
